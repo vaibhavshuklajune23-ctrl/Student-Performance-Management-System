@@ -1,0 +1,50 @@
+STUDENT PERFORMANCE MANAGEMENT SYSTEM
+USE CASE DIAGRAM
+
+                     +------------------+
+                     |      USER        |
+                     +--------+---------+
+                              |
+          +-------------------+-------------------+
+          |                   |                   |
+          v                   v                   v
+   +-------------+     +-------------+     +-------------+
+   |   Manage    |     |   Manage    |     |  Manage     |
+   |  Students   |     |    Marks    |     | Attendance  |
+   +------+------+     +------+------+     +------+------+
+          |                   |                   |
+    +-----+-----+       +-----+-----+       +-----+-----+
+    |     |     |       |     |     |       |           |
+    v     v     v       v     v     v       v           v
+  Add   Search Update   Add  View Calculate Record     View
+        Student Student Marks Marks Performance         Attendance
+    |             |
+    v             v
+  View          Delete
+ Students       Student
+
+
+                     +-----------------------+
+                     |     Reporting         |
+                     +-----------+-----------+
+                                 |
+                    +------------+------------+
+                    |                         |
+                    v                         v
+             Performance Report       Class Dashboard
+
+
+                     +-----------------------+
+                     |   Data Management      |
+                     +-----------+-----------+
+                                 |
+                         +-------+-------+
+                         |               |
+                         v               v
+                       Save            Load
+                       Data            Data
+                         |               |
+                         +-------+-------+
+                                 |
+                                 v
+                           students.txt
