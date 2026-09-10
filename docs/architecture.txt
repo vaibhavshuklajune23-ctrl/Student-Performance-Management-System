@@ -1,0 +1,44 @@
+STUDENT PERFORMANCE MANAGEMENT SYSTEM
+SYSTEM ARCHITECTURE
+
+                    USER
+                     |
+                     v
+              +-------------+
+              |    Main     |
+              | Java Class  |
+              +-------------+
+                     |
+        +------------+------------+
+        |            |            |
+        v            v            v
++---------------+ +---------------+ +-------------------+
+|StudentManager | | MarksManager  | |AttendanceManager |
++---------------+ +---------------+ +-------------------+
+        |                |                  |
+        +----------------+------------------+
+                         |
+                         v
+                   +------------+
+                   |  Student   |
+                   |   Model    |
+                   +------------+
+                         |
+             +-----------+-----------+
+             |                       |
+             v                       v
+      +--------------+       +---------------+
+      | FileManager  |       | ReportManager |
+      +--------------+       +---------------+
+             |                       |
+             v                       v
+      students.txt            Performance Report
+
+                         |
+                         v
+                +-------------------+
+                | DashboardManager  |
+                +-------------------+
+                         |
+                         v
+                  Class Analytics

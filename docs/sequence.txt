@@ -1,0 +1,32 @@
+STUDENT PERFORMANCE MANAGEMENT SYSTEM
+SEQUENCE DIAGRAM
+
+USE CASE: ADD STUDENT
+
+
+User              Main              StudentManager          Student
+ |                 |                      |                   |
+ |-- Select 1 ---->|                      |                   |
+ |                 |                      |                   |
+ |                 |-- Get name --------->|                   |
+ |                 |-- Get roll number -->|                   |
+ |                 |-- Get age ---------->|                   |
+ |                 |                      |                   |
+ |                 |-- Check roll number->|                   |
+ |                 |                      |                   |
+ |                 |<-- Student not found-|                   |
+ |                 |                      |                   |
+ |                 |----------------------------------------->|
+ |                 |       Create Student object              |
+ |                 |                      |                   |
+ |                 |-- addStudent() ----->|                   |
+ |                 |                      |                   |
+ |                 |                      |-- Store student ->|
+ |                 |                      |                   |
+ |                 |<-- Success ----------|                   |
+ |                 |                      |                   |
+ |<-- Display success message             |                   |
+ |                 |                      |                   |
+ |                 |-- Save all students to FileManager       |
+ |                 |                      |                   |
+ |<---------------- Student added successfully --------------|
